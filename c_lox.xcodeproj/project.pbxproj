@@ -79,22 +79,22 @@
 		5E8356D628A5E20100F11C55 /* c_lox */ = {
 			isa = PBXGroup;
 			children = (
-				5E8356E128A5E21600F11C55 /* chunk.c */,
+				5EF39D1C28A5FB5B00D50314 /* main.c */,
 				5E8356E628A5E21600F11C55 /* chunk.h */,
-				5E8356E928A5E21700F11C55 /* common.h */,
-				5E8356DE28A5E21600F11C55 /* debug.c */,
+				5E8356E128A5E21600F11C55 /* chunk.c */,
 				5E8356E528A5E21600F11C55 /* debug.h */,
-				5E8356E328A5E21600F11C55 /* memory.c */,
+				5E8356DE28A5E21600F11C55 /* debug.c */,
 				5E8356DF28A5E21600F11C55 /* memory.h */,
-				5E8356E428A5E21600F11C55 /* value.c */,
+				5E8356E328A5E21600F11C55 /* memory.c */,
 				5E8356E728A5E21700F11C55 /* value.h */,
+				5E8356E428A5E21600F11C55 /* value.c */,
 				5E8356E028A5E21600F11C55 /* vm.h */,
 				5E8356E828A5E21700F11C55 /* vm.c */,
 				5EF39D1E28A6015000D50314 /* compiler.h */,
 				5EF39D1F28A6015000D50314 /* compiler.c */,
 				5EF39D2128A6023000D50314 /* scanner.h */,
 				5EF39D2228A6023000D50314 /* scanner.c */,
-				5EF39D1C28A5FB5B00D50314 /* main.c */,
+				5E8356E928A5E21700F11C55 /* common.h */,
 			);
 			path = c_lox;
 			sourceTree = "<group>";
