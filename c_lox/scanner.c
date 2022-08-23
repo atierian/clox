@@ -83,7 +83,7 @@ static void skipWhitespace() {
             case '\n':
                 scanner.line++;
                 advance();
-            break;
+                break;
             case '/':
                 if (peekNext() == '/') {
                     while (peek() != '\n' && !isAtEnd())
