@@ -16,6 +16,7 @@
 		5EF39D2028A6015000D50314 /* compiler.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EF39D1F28A6015000D50314 /* compiler.c */; };
 		5EF39D2328A6023000D50314 /* scanner.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EF39D2228A6023000D50314 /* scanner.c */; };
 		5EF39D2628B4607700D50314 /* object.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EF39D2528B4607700D50314 /* object.c */; };
+		5EF39D2928B5992700D50314 /* table.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EF39D2828B5992700D50314 /* table.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,6 +51,8 @@
 		5EF39D2228A6023000D50314 /* scanner.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scanner.c; sourceTree = "<group>"; };
 		5EF39D2428B4607700D50314 /* object.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = object.h; sourceTree = "<group>"; };
 		5EF39D2528B4607700D50314 /* object.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = object.c; sourceTree = "<group>"; };
+		5EF39D2728B5992700D50314 /* table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
+		5EF39D2828B5992700D50314 /* table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				5E8356E428A5E21600F11C55 /* value.c */,
 				5EF39D2428B4607700D50314 /* object.h */,
 				5EF39D2528B4607700D50314 /* object.c */,
+				5EF39D2728B5992700D50314 /* table.h */,
+				5EF39D2828B5992700D50314 /* table.c */,
 				5E8356E028A5E21600F11C55 /* vm.h */,
 				5E8356E828A5E21700F11C55 /* vm.c */,
 				5EF39D1E28A6015000D50314 /* compiler.h */,
@@ -161,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF39D2928B5992700D50314 /* table.c in Sources */,
 				5E8356EB28A5E21700F11C55 /* chunk.c in Sources */,
 				5E8356ED28A5E21700F11C55 /* memory.c in Sources */,
 				5E8356EE28A5E21700F11C55 /* value.c in Sources */,
