@@ -197,6 +197,6 @@ Token scanToken(void) {
         case '>': return makeToken(match('=') ? TOKEN_GREATER_EQUAL : TOKEN_GREATER);
         case '"': return string();
     }
-    
+
     return errorToken("Unexpected Character");
 }
