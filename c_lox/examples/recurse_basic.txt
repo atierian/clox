@@ -1,0 +1,10 @@
+fun a(n) {
+    print a;
+    if (n > 100) return n;
+    var b = n + 1;
+    return a(b);
+}
+
+var start = clock();
+print a(60);
+print clock() - start;

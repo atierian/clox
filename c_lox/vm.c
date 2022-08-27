@@ -1,6 +1,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
 #include "common.h"
 #include "compiler.h"
@@ -10,6 +11,10 @@
 #include "vm.h"
 
 VM vm;
+
+static Value clockNative(int argCount, Value* args) {
+    return NUMBER_VAL((double)clock() / CLOCKS_PER_SEC);
+}
 
 static void resetStack() {
 	vm.stackTop = vm.stack;
@@ -39,10 +44,20 @@ static void runtimeError(const char* format, ...) {
     resetStack();
 }
 
+// TODO: Add arity validation
+static void defineNative(const char* name, NativeFn function) {
+    push(OBJ_VAL(copyString(name, (int)strlen(name))));
+    push(OBJ_VAL(newNative(function)));
+    tableSet(&vm.globals, AS_STRING(vm.stack[0]), vm.stack[1]);
+    pop();
+    pop();
+}
+
 void initVM(void) {
 	resetStack();
     vm.objects = NULL;
     initTable(&vm.strings);
+    defineNative("clock", clockNative);
 }
 
 void freeVM(void) {
@@ -100,6 +115,12 @@ static bool callValue(Value callee, int argCount) {
         switch (OBJ_TYPE(callee)) {
             case OBJ_FUNCTION:
                 return call(AS_FUNCTION(callee), argCount);
+            case OBJ_NATIVE: {
+                NativeFn native = AS_NATIVE(callee);
+                Value result = native(argCount, vm.stackTop - argCount); vm.stackTop -= argCount + 1;
+                push(result);
+                return true;
+            }
             default:
                 break; // Non-callable object type.
         }
@@ -166,8 +187,10 @@ static InterpretResult run() {
             case OP_CONSTANT: {
                 Value constant = READ_CONSTANT();
                 push(constant);
+#ifdef DEBUG_PRINT_CODE
                 printValue(constant);
                 printf("\n");
+#endif
                 break;
             }
             case OP_NIL:
@@ -295,8 +318,7 @@ static InterpretResult run() {
                     return INTERPRET_OK;
                 }
                 
-                vm.stackTop = frame->slots;
-                push(result);
+                vm.stackTop = frame->slots; push(result);
                 frame = &vm.frames[vm.frameCount - 1];
                 break;
             }

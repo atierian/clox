@@ -53,6 +53,9 @@
 		5EF39D2528B4607700D50314 /* object.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = object.c; sourceTree = "<group>"; };
 		5EF39D2728B5992700D50314 /* table.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
 		5EF39D2828B5992700D50314 /* table.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = table.c; sourceTree = "<group>"; };
+		5EF39D2A28B9A72900D50314 /* fib.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = fib.txt; sourceTree = "<group>"; };
+		5EF39D2D28B9B10C00D50314 /* no_return.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = no_return.txt; sourceTree = "<group>"; };
+		5EF39D2E28B9B18000D50314 /* recurse_basic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = recurse_basic.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,7 @@
 		5E8356D628A5E20100F11C55 /* c_lox */ = {
 			isa = PBXGroup;
 			children = (
+				5EF39D2C28B9B0F000D50314 /* examples */,
 				5EF39D1C28A5FB5B00D50314 /* main.c */,
 				5E8356E628A5E21600F11C55 /* chunk.h */,
 				5E8356E128A5E21600F11C55 /* chunk.c */,
@@ -107,6 +111,16 @@
 				5E8356E928A5E21700F11C55 /* common.h */,
 			);
 			path = c_lox;
+			sourceTree = "<group>";
+		};
+		5EF39D2C28B9B0F000D50314 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				5EF39D2A28B9A72900D50314 /* fib.txt */,
+				5EF39D2D28B9B10C00D50314 /* no_return.txt */,
+				5EF39D2E28B9B18000D50314 /* recurse_basic.txt */,
+			);
+			path = examples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,7 @@
 				TargetAttributes = {
 					5E8356D328A5E20100F11C55 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -294,20 +309,35 @@
 		5E8356DC28A5E20100F11C55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3Q4R66M4R;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		5E8356DD28A5E20100F11C55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G3Q4R66M4R;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
