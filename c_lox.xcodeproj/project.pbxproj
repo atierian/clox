@@ -32,6 +32,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5E5D46D428B9B7B200B4CF1E /* function_variable_reference.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = function_variable_reference.txt; sourceTree = "<group>"; };
+		5E5D46D528BAED3F00B4CF1E /* outer_middle_inner.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = outer_middle_inner.txt; sourceTree = "<group>"; };
+		5E5D46D628BAF5AA00B4CF1E /* outer_inner_001.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = outer_inner_001.txt; sourceTree = "<group>"; };
+		5E5D46D728BAFD4700B4CF1E /* outer_inner_closed_upvalue.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = outer_inner_closed_upvalue.txt; sourceTree = "<group>"; };
+		5E5D46D828BAFE0600B4CF1E /* closure_globals.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = closure_globals.txt; sourceTree = "<group>"; };
+		5E5D46D928BB06BD00B4CF1E /* closure_globals_001.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = closure_globals_001.txt; sourceTree = "<group>"; };
 		5E8356D428A5E20100F11C55 /* c_lox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c_lox; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8356DE28A5E21600F11C55 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		5E8356DF28A5E21600F11C55 /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
@@ -119,6 +125,12 @@
 				5EF39D2A28B9A72900D50314 /* fib.txt */,
 				5EF39D2D28B9B10C00D50314 /* no_return.txt */,
 				5EF39D2E28B9B18000D50314 /* recurse_basic.txt */,
+				5E5D46D428B9B7B200B4CF1E /* function_variable_reference.txt */,
+				5E5D46D528BAED3F00B4CF1E /* outer_middle_inner.txt */,
+				5E5D46D628BAF5AA00B4CF1E /* outer_inner_001.txt */,
+				5E5D46D728BAFD4700B4CF1E /* outer_inner_closed_upvalue.txt */,
+				5E5D46D928BB06BD00B4CF1E /* closure_globals_001.txt */,
+				5E5D46D828BAFE0600B4CF1E /* closure_globals.txt */,
 			);
 			path = examples;
 			sourceTree = "<group>";
