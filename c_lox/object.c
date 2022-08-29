@@ -65,7 +65,10 @@ static ObjString* allocateString(char * chars, int length,
 	string->length = length;
 	string->chars = chars;
 	string->hash = hash;
+	
+	push(OBJ_VAL(string));
 	tableSet(&vm.strings, string, NIL_VAL);
+	pop();
 	return string;
 }
 
@@ -120,6 +123,7 @@ void printObject(Value value) {
 	switch (OBJ_TYPE(value)) {
 		case OBJ_CLOSURE:
 			printFunction(AS_CLOSURE(value)->function);
+			break;
 		case OBJ_FUNCTION:
 			printFunction(AS_FUNCTION(value));
 			break;

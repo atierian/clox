@@ -57,7 +57,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/closure_globals_001.txt"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/closure_globals.txt"
@@ -81,7 +81,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/fib.txt"
-            isEnabled = "NO">
+            isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>
