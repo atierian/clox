@@ -7,19 +7,19 @@ typedef struct Obj Obj;
 typedef struct ObjString ObjString;
 
 typedef enum {
-    VAL_BOOL,
-    VAL_NIL,
-    VAL_NUMBER,
-    VAL_OBJ
+	VAL_BOOL,
+	VAL_NIL,
+	VAL_NUMBER,
+	VAL_OBJ
 } ValueType;
 
 typedef struct {
-    ValueType type;
-    union {
-        bool boolean;
-        double number;
-        Obj* obj;
-    } as;
+	ValueType type;
+	union {
+		bool boolean;
+		double number;
+		Obj* obj;
+	} as;
 } Value;
 
 #define IS_BOOL(value)    ((value).type == VAL_BOOL)
@@ -37,9 +37,9 @@ typedef struct {
 #define OBJ_VAL(object)   ((Value){VAL_OBJ, {.obj = (Obj*)object}})
 
 typedef struct {
-    int capacity;
-    int count;
-    Value* values;
+	int capacity;
+	int count;
+	Value* values;
 } ValueArray;
 
 bool valuesEqual(Value a, Value b);

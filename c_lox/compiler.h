@@ -13,5 +13,6 @@
 #include "vm.h"
 
 ObjFunction* compile(const char* source);
+void markCompilerRoots(void);
 
 #endif /* compiler_h */
