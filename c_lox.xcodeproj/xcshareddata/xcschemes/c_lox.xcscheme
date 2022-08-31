@@ -56,6 +56,18 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/pair.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/bacon_and_eggs.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/calling_methods.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/closure_globals_001.txt"
             isEnabled = "NO">
          </CommandLineArgument>
@@ -81,7 +93,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/fib.txt"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>

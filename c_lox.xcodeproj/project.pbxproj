@@ -38,6 +38,9 @@
 		5E5D46D728BAFD4700B4CF1E /* outer_inner_closed_upvalue.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = outer_inner_closed_upvalue.txt; sourceTree = "<group>"; };
 		5E5D46D828BAFE0600B4CF1E /* closure_globals.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = closure_globals.txt; sourceTree = "<group>"; };
 		5E5D46D928BB06BD00B4CF1E /* closure_globals_001.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = closure_globals_001.txt; sourceTree = "<group>"; };
+		5E5D46DA28BDB38C00B4CF1E /* pair.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = pair.txt; sourceTree = "<group>"; };
+		5E5D46DB28BEE5D700B4CF1E /* bacon_and_eggs.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = bacon_and_eggs.txt; sourceTree = "<group>"; };
+		5E5D46DC28BF6DCE00B4CF1E /* calling_methods.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = calling_methods.txt; sourceTree = "<group>"; };
 		5E8356D428A5E20100F11C55 /* c_lox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c_lox; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8356DE28A5E21600F11C55 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		5E8356DF28A5E21600F11C55 /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
@@ -131,6 +134,9 @@
 				5E5D46D728BAFD4700B4CF1E /* outer_inner_closed_upvalue.txt */,
 				5E5D46D928BB06BD00B4CF1E /* closure_globals_001.txt */,
 				5E5D46D828BAFE0600B4CF1E /* closure_globals.txt */,
+				5E5D46DA28BDB38C00B4CF1E /* pair.txt */,
+				5E5D46DB28BEE5D700B4CF1E /* bacon_and_eggs.txt */,
+				5E5D46DC28BF6DCE00B4CF1E /* calling_methods.txt */,
 			);
 			path = examples;
 			sourceTree = "<group>";
