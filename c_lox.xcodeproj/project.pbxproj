@@ -47,6 +47,7 @@
 		5E5D46E028C0100600B4CF1E /* donut_inheritance.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = donut_inheritance.txt; sourceTree = "<group>"; };
 		5E5D46E128C0157A00B4CF1E /* broken_inheritence.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = broken_inheritence.txt; sourceTree = "<group>"; };
 		5E5D46E228C0163E00B4CF1E /* multi_inheritance_and_super.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = multi_inheritance_and_super.txt; sourceTree = "<group>"; };
+		5E5D46E428C043D000B4CF1E /* zoo_benchmark.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = zoo_benchmark.txt; sourceTree = "<group>"; };
 		5E8356D428A5E20100F11C55 /* c_lox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = c_lox; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E8356DE28A5E21600F11C55 /* debug.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = debug.c; sourceTree = "<group>"; };
 		5E8356DF28A5E21600F11C55 /* memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
@@ -84,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E5D46E328C043C200B4CF1E /* benchmarks */ = {
+			isa = PBXGroup;
+			children = (
+				5E5D46E428C043D000B4CF1E /* zoo_benchmark.txt */,
+			);
+			path = benchmarks;
+			sourceTree = "<group>";
+		};
 		5E8356CB28A5E20100F11C55 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +140,7 @@
 		5EF39D2C28B9B0F000D50314 /* examples */ = {
 			isa = PBXGroup;
 			children = (
+				5E5D46E328C043C200B4CF1E /* benchmarks */,
 				5EF39D2A28B9A72900D50314 /* fib.txt */,
 				5EF39D2D28B9B10C00D50314 /* no_return.txt */,
 				5EF39D2E28B9B18000D50314 /* recurse_basic.txt */,
