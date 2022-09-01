@@ -1,0 +1,2 @@
+var NotAClass = "definitely not a class";
+class OhNo < NotAClass {}

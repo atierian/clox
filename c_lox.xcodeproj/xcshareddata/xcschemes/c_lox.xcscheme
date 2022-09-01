@@ -56,6 +56,30 @@
             isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/broken_inheritence.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/multi_inheritance_and_super.txt"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/donut_inheritance.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/CoffeeMaker.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/oops.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/nested_this.txt"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/pair.txt"
             isEnabled = "NO">
          </CommandLineArgument>
@@ -65,7 +89,7 @@
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/calling_methods.txt"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </CommandLineArgument>
          <CommandLineArgument
             argument = "/Users/iansaultz/Projects/c_lox/c_lox/examples/closure_globals_001.txt"
